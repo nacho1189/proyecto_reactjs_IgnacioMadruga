@@ -4,7 +4,7 @@ function App() {
   return (
      <>
      <NavBar/>
-     <ItemListContainer/>
+     <ItemListContainer texto= "Mi Primer E-Commerce con jsx"/>
      </>
   );
 }
