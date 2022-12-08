@@ -16,10 +16,10 @@ export const NavBar = () => {
                     <a className='nav_link' href="#">PC</a>
                 </li>
                 <li>
-                    <a className='nav_link' href="#">Laptops</a>
+                    <a className='nav_link' href="#">Escritorios</a>
                 </li>
                 <li>
-                    <a className='nav_link' href="#">Componentes</a>
+                    <a className='nav_link' href="#">Electrodomesticos</a>
                 </li>
                 <li>
                     <a className='nav_link' href="#">1<CartWidget/></a>
