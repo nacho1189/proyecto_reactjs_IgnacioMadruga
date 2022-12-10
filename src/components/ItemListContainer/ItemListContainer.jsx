@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Title from '../Ttlie/Title';
 import ItemCount from '../ItemCount/ItemCount';
 import ItemList from '../ItemList/ItemList';
+import { useParams } from 'react-router-dom';
 
 const productos = [
     {id: 1, nombre: "Heladera LG", tipo: "Heladera", cantidad: 1, desc: "", precio: 1200,  img:'./imgages/heladera.jpg' },
@@ -13,16 +14,23 @@ const productos = [
 export const ItemListContainer = ({texto}) => {
     const [data, setData] = useState([]);
 
+    const {categoriaId} = useParams();
+
     useEffect(()=>{
         const getData = new Promise(resolve => {
             setTimeout(() => {
                 resolve (productos);
-            }, 3000);
+            }, 2000);
         });
-    getData.then(res => setData(res));
+        if(categoriaId){
+            getData.then(res => setData(res.filter(elctrodomesticos=> elctrodomesticos.category === categoriaId)));
+        }else{
+            getData.then(res => setData(res));
 
+        }
+    
 
-    },[])
+    },[categoriaId])
 
     const onAdd = (quantity) =>{
         console.log(`Compraste ${quantity} unidades`);
