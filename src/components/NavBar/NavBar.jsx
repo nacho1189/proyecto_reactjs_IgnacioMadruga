@@ -14,10 +14,10 @@ export const NavBar = () => {
                     <NavLink className='nav_link' to='/'>Home</NavLink>
                 </li>
                 <li>
-                    <NavLink className='nav_link' to='/categoria/computadoras' >Computadoras</NavLink>
+                    <NavLink className='nav_link' to='/categoria/Peliculas' >Peliculas</NavLink>
                 </li>
                 <li>
-                    <NavLink className='nav_link'  to='/categoria/electrodomesticos'>Electrodomesticos</NavLink>
+                    <NavLink className='nav_link'  to='/categoria/Series'>Series</NavLink>
                 </li>
                 
                 <li>

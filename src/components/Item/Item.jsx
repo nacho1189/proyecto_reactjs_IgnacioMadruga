@@ -1,11 +1,14 @@
+
 import React from "react";
+
+import { Link } from "react-router-dom";
 
 const Item = ({info}) => {
     return (
-        <a href="" className="productos">
+        <Link to={'/detalle/${info.id}'} className="productos">
             <img src={info.img} alt=""/>
-            <p>{info.nombre}</p>
-        </a>
+            <p>{info.title}</p>
+        </Link>
     );
 }
 

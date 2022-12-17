@@ -19,7 +19,7 @@ function App() {
           <Route path='/' element={<ItemListContainer texto= "Mi Primer E-Commerce con jsx" />}/> 
           <Route path='/categoria/:categoriaId' element={<ItemListContainer texto= "Mi Primer E-Commerce con jsx" />} />      
           <Route path='/cart' element ={<Cart />}/>
-          <Route path='detalle' element = {<ItemDetilContainer />}/>
+          <Route path='detalle/detalleId' element = {<ItemDetilContainer />}/>
         </Routes>
       </BrowserRouter>
      </>
